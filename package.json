@@ -1,0 +1,25 @@
+{
+  "name": "qa-challenge-cookunity-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "report": "npm run test && npx mochawesome-merge cypress/reports/.jsons/*.json > cypress/reports/merged.json && npx marge cypress/reports/merged.json -f report -o cypress/reports/html",
+    "report:open": "open cypress/reports/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.3.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2",
+    "dotenv": "^16.5.0"
+  }
+}
