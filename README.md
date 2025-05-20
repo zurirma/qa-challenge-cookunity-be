@@ -70,6 +70,7 @@ This command will execute all tests.
 Open the report:
 npm run report:open
 
+NOTES:  on reports, there is  video section of tests run for better visibility.
 
 # Best Practices Implemented
 ✅ Modular architecture using custom commands and helper functions.
